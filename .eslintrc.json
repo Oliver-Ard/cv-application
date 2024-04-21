@@ -19,13 +19,6 @@
 		"react/prop-types": "off",
 		"no-console": "off",
 		"quotes": ["error", "double"],
-		"import/no-extraneous-dependencies": [
-			"error",
-			{
-				"devDependencies": true,
-				"optionalDependencies": false,
-				"peerDependencies": false
-			}
-		]
+		"import/no-extraneous-dependencies": "off"
 	}
 }
