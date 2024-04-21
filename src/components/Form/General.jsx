@@ -1,4 +1,15 @@
-function General() {
+function General({ data, onChange }) {
+	function handleChange(e) {
+		const { name, value } = e.target;
+
+		const updatedGeneral = { ...data.general, [name]: value };
+
+		onChange({
+			...data,
+			general: updatedGeneral,
+		});
+	}
+
 	return (
 		<>
 			<div className="input-wrapper">
@@ -11,6 +22,8 @@ function General() {
 					</strong>
 				</label>
 				<input
+					value={data.general.name}
+					onChange={handleChange}
 					type="text"
 					id="name"
 					name="name"
@@ -29,6 +42,8 @@ function General() {
 					</strong>
 				</label>
 				<input
+					value={data.general.email}
+					onChange={handleChange}
 					type="email"
 					id="email"
 					name="email"
@@ -47,9 +62,11 @@ function General() {
 					</strong>
 				</label>
 				<input
+					value={data.general.phoneNumber}
+					onChange={handleChange}
 					type="tel"
 					id="phone-number"
-					name="phone-number"
+					name="phoneNumber"
 					placeholder="123 456 7890"
 					max="10"
 					maxLength="18"
