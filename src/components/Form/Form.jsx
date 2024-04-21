@@ -85,7 +85,7 @@ function Form() {
 							onClick={() => {
 								removeFields("education", id);
 							}}
-							className="remove-btn"
+							className="remove-btn form-btn"
 							type="button"
 							aria-label="Remove fields">
 							<i className="fa-solid fa-trash-can"></i>
@@ -95,7 +95,7 @@ function Form() {
 
 				<button
 					onClick={() => addFields("education")}
-					className="add-btn"
+					className="add-btn form-btn"
 					type="button"
 					aria-label="Add fields">
 					<i className="fa-solid fa-plus"></i>
@@ -111,7 +111,7 @@ function Form() {
 							onClick={() => {
 								removeFields("experience", id);
 							}}
-							className="remove-btn"
+							className="remove-btn form-btn"
 							type="button"
 							aria-label="Remove fields">
 							<i className="fa-solid fa-trash-can"></i>
@@ -123,7 +123,7 @@ function Form() {
 					onClick={() => {
 						addFields("experience");
 					}}
-					className="add-btn"
+					className="add-btn form-btn"
 					type="button"
 					aria-label="Add fields">
 					{" "}
@@ -131,7 +131,7 @@ function Form() {
 				</button>
 			</Section>
 
-			<button className="submit-btn">Generate CV</button>
+			<button className="submit-btn form-btn">Generate CV</button>
 		</form>
 	);
 }

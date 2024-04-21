@@ -4,7 +4,7 @@ function App() {
 	return (
 		<>
 			<h1>CV Maker</h1>
-			<main className="main">
+			<main className="content">
 				<Form />
 			</main>
 		</>

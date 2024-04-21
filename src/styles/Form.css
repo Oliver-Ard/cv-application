@@ -1,0 +1,121 @@
+.cv-form fieldset {
+	border: none;
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.cv-form fieldset::before {
+	content: "";
+	background: var(--clr-primary);
+	width: 80%;
+	height: 2px;
+	border-radius: var(--border-radius-3);
+
+	position: absolute;
+	bottom: -15px;
+	left: calc(50% - 40%);
+}
+
+.cv-form legend {
+	color: var(--clr-light);
+	font-size: var(--font-size-700);
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 1rem;
+	line-height: 1;
+	border-bottom: 1px solid currentColor;
+}
+
+/* --Input fields-- */
+.cv-form .input-wrapper {
+	margin-bottom: 1rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.cv-form label {
+	color: var(--clr-primary);
+	font-size: var(--font-size-300);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	margin-bottom: 0.5rem;
+}
+
+.cv-form input,
+.cv-form textarea {
+	color: var(--clr-light);
+	background: transparent;
+	padding: 0.3rem 0.5rem;
+	border-radius: 5px;
+	border: none;
+	box-shadow: var(--input-border);
+}
+
+.cv-form textarea {
+	height: 10rem;
+}
+
+.cv-form input::placeholder,
+.cv-form textarea::placeholder {
+	color: var(--clr-grey);
+}
+
+.cv-form input:focus-visible:invalid {
+	box-shadow: var(--input-border-invalid);
+}
+.cv-form input:focus-visible,
+.cv-form textarea:focus-visible {
+	outline: none;
+	border: none;
+	box-shadow: var(--input-border-focus);
+}
+
+.cv-form .required-label {
+	color: var(--clr-red);
+	margin-left: 2px;
+}
+
+/* Buttons */
+.cv-form .form-btn {
+	display: block;
+	font-size: var(--font-size-600);
+	width: 100%;
+	border-radius: var(--border-radius);
+
+	transition: transform 200ms ease-in-out;
+}
+
+.cv-form .form-btn:hover {
+	transform: scale(1.03);
+}
+
+.cv-form .form-btn:focus-visible {
+	outline: none;
+	box-shadow: var(--button-focus-light);
+
+	animation: scale 300ms ease-in-out alternate 2;
+}
+
+.cv-form .add-btn {
+	background: var(--clr-primary-2);
+	color: var(--clr-dark);
+}
+
+.cv-form .remove-btn {
+	background: var(--clr-red-2);
+	margin-bottom: 2rem;
+	width: auto;
+	margin-left: auto;
+}
+
+.cv-form .remove-btn:hover {
+	transform: scale(1.15);
+}
+
+.cv-form .submit-btn {
+	background: var(--clr-light-2);
+	color: var(--clr-dark);
+	font-weight: 500;
+}

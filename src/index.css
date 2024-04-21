@@ -1,1 +1,129 @@
 @import "./styles/reset.css";
+
+@import "./styles/Form.css";
+
+/* VARIABLES */
+:root {
+	--ff-body: "Roboto", sans-serif;
+
+	--font-size-200: 0.694rem;
+	--font-size-300: 0.833rem;
+	--font-size-400: 1rem;
+	--font-size-500: 1.2rem;
+	--font-size-600: 1.44rem;
+	--font-size-700: 1.728rem;
+	--font-size-800: 2.074rem;
+	--font-size-900: 2.488rem;
+	--font-size-1000: 2.986rem;
+
+	--clr-primary: #ffc20c;
+	--clr-primary-2: rgba(255, 194, 12, 0.9);
+	--clr-dark: #242020;
+	--clr-light: #fff;
+	--clr-light-2: rgba(255, 255, 255, 0.9);
+	--clr-grey: rgba(255, 255, 255, 0.6);
+	--clr-red: #de2828;
+	--clr-red-2: rgba(222, 40, 40, 0.8);
+
+	--clr-overlay: rgb(0, 0, 0, 0.7);
+
+	--box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.8);
+
+	--input-border: 0 0 0 1.5px var(--clr-light);
+	--input-border-focus: 0 0 0 2px var(--clr-primary);
+	--input-border-invalid: 0 0 0 2px var(--clr-red);
+	--button-focus-light: 0 0 0 2px var(--clr-light);
+
+	--border-radius: 8px;
+	--border-radius-2: 50%;
+	--border-radius-3: 50px;
+}
+
+/* GENERAL STYLES */
+body {
+	font-family: var(--ff-body);
+	font-size: var(--font-size-500);
+	color: var(--clr-light);
+	background: url("./assets/background.jpg") no-repeat fixed center/cover;
+}
+
+h1 {
+	font-size: var(--font-size-1000);
+	text-align: center;
+	background: var(--clr-overlay);
+	padding: 2rem;
+	box-shadow: var(--box-shadow);
+}
+
+h2 {
+	font-size: var(--font-size-900);
+}
+
+h3 {
+	font-size: var(--font-size-800);
+}
+
+h4 {
+	font-size: var(--font-size-700);
+}
+
+button {
+	display: inline-block;
+	cursor: pointer;
+	color: inherit;
+	border: none;
+	padding: 0.3em;
+}
+
+button:active {
+	opacity: 0.8;
+}
+
+i {
+	font-size: inherit;
+	margin: 0 0.3rem;
+}
+
+/* Main Content */
+.content {
+	background: var(--clr-overlay);
+	width: min(90%, 60rem);
+	margin: 2rem auto;
+	padding: 2rem;
+	box-shadow: var(--box-shadow);
+	border-radius: var(--border-radius);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 420px) {
+	body {
+		font-size: var(--font-size-400);
+	}
+
+	h1 {
+		font-size: var(--font-size-900);
+	}
+
+	.cv-form legend {
+		font-size: var(--font-size-600);
+	}
+
+	.cv-form label {
+		font-size: var(--font-size-200);
+	}
+
+	.cv-form .form-btn {
+		font-size: var(--font-size-500);
+	}
+}
+
+/* ANIMATIONS */
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.05);
+	}
+}

@@ -4,5 +4,6 @@
 	},
 	"eslint.validate": ["javascript", "javascriptreact"],
 	"liveServer.settings.port": 5501,
-	"cSpell.words": ["uuidv"]
+	"cSpell.words": ["uuidv"],
+	"conventionalCommits.scopes": ["form"]
 }
