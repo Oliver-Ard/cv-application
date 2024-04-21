@@ -1,35 +1,36 @@
+import { v4 as uuidv4 } from "uuid";
+
 function Education() {
+	const randomId = uuidv4();
+
 	return (
 		<>
 			<div className="input-wrapper">
-				<label>
-					School Name
-					<input
-						type="text"
-						name="school-name"
-						placeholder="Example University"
-					/>
-				</label>
+				<label htmlFor={`school-name-${randomId}`}>School Name</label>
+				<input
+					type="text"
+					id={`school-name-${randomId}`}
+					name="school-name"
+					placeholder="Example University"
+				/>
 			</div>
 			<div className="input-wrapper">
-				<label>
-					Title of study
-					<input
-						type="text"
-						name="study-title"
-						placeholder="Bachelor in Computer Science"
-					/>
-				</label>
+				<label htmlFor={`study-title-${randomId}`}>Title of study</label>
+				<input
+					type="text"
+					id={`study-title-${randomId}`}
+					name="study-title"
+					placeholder="Bachelor in Computer Science"
+				/>
 			</div>
 			<div className="input-wrapper">
-				<label>
-					Date of study
-					<input
-						type="text"
-						name="study-date"
-						placeholder="September 2018 - May 2022"
-					/>
-				</label>
+				<label htmlFor={`study-date-${randomId}`}>Date of study</label>
+				<input
+					type="text"
+					id={`study-date-${randomId}`}
+					name="study-date"
+					placeholder="September 2018 - May 2022"
+				/>
 			</div>
 		</>
 	);
