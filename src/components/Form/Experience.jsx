@@ -39,7 +39,14 @@ function Experience({ data, onChange }) {
 				<div key={experience.id} className="experience-entry">
 					{/* Company Name */}
 					<div className="input-wrapper">
-						<label htmlFor={`company-name-${index}`}>Company Name</label>
+						<label htmlFor={`company-name-${index}`}>
+							Company Name
+							<strong>
+								<span className="required-label" aria-label="required">
+									*
+								</span>
+							</strong>
+						</label>
 						<input
 							value={experience.companyName}
 							onChange={(e) => handleChange(index, e)}
@@ -47,6 +54,7 @@ function Experience({ data, onChange }) {
 							id={`company-name-${index}`}
 							name={"companyName"}
 							placeholder="Example Company"
+							required
 						/>
 					</div>
 					{/* Position Title */}
@@ -103,7 +111,7 @@ function Experience({ data, onChange }) {
 				className="add-btn form-btn"
 				type="button"
 				aria-label="Add fields">
-				<i className="fa-solid fa-plus"></i>
+				<i className="fa-solid fa-plus fa-lg"></i>
 			</button>
 		</>
 	);

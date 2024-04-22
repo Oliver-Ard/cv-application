@@ -6,7 +6,11 @@ import Output from "./components/Output.jsx";
 
 function App() {
 	const data = {
-		general: { name: "", email: "", phoneNumber: "" },
+		general: {
+			name: "",
+			email: "",
+			phoneNumber: "",
+		},
 		education: [
 			{
 				id: uuidv4(),
@@ -29,7 +33,6 @@ function App() {
 	const [formData, setFormData] = useState(data);
 	const [section, setSection] = useState("form");
 
-	console.log(formData);
 	return (
 		<>
 			<h1>CV Maker</h1>

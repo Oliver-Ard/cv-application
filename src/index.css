@@ -1,6 +1,6 @@
 @import "./styles/reset.css";
-
 @import "./styles/Form.css";
+@import "./styles/Output.css";
 
 /* VARIABLES */
 :root {
@@ -104,6 +104,10 @@ i {
 		font-size: var(--font-size-900);
 	}
 
+	h2 {
+		font-size: var(--font-size-800);
+	}
+
 	.cv-form legend {
 		font-size: var(--font-size-600);
 	}
@@ -113,6 +117,10 @@ i {
 	}
 
 	.cv-form .form-btn {
+		font-size: var(--font-size-500);
+	}
+
+	.edit-btn {
 		font-size: var(--font-size-500);
 	}
 }

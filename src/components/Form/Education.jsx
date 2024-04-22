@@ -38,7 +38,14 @@ function Education({ data, onChange }) {
 				<div key={education.id} className="education-entry">
 					{/* School Name */}
 					<div className="input-wrapper">
-						<label htmlFor={`school-name-${index}`}>School Name</label>
+						<label htmlFor={`school-name-${index}`}>
+							School Name
+							<strong>
+								<span className="required-label" aria-label="required">
+									*
+								</span>
+							</strong>
+						</label>
 						<input
 							value={education.schoolName}
 							onChange={(e) => handleChange(index, e)}
@@ -46,6 +53,7 @@ function Education({ data, onChange }) {
 							id={`school-name-${index}`}
 							name={"schoolName"}
 							placeholder="Example School"
+							required
 						/>
 					</div>
 					{/* Title of Study */}
@@ -88,7 +96,7 @@ function Education({ data, onChange }) {
 				className="add-btn form-btn"
 				type="button"
 				aria-label="Add fields">
-				<i className="fa-solid fa-plus"></i>
+				<i className="fa-solid fa-plus fa-lg"></i>
 			</button>
 		</>
 	);

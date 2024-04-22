@@ -24,7 +24,7 @@ function Form({ onChange, formData, onSubmit }) {
 				<Education data={formData} onChange={onChange} />
 			</fieldset>
 
-			{/* Experience Info  */}
+			{/* Experience Info */}
 			<fieldset>
 				<legend>Experience</legend>
 				<Experience data={formData} onChange={onChange} />

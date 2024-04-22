@@ -1,0 +1,40 @@
+.info-section {
+	margin-bottom: 2rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--clr-primary);
+}
+
+.info-title {
+	font-weight: 200;
+	margin-bottom: 1rem;
+}
+
+.highlighted-text {
+	color: var(--clr-primary);
+}
+
+.info-wrapper:not(:last-of-type) {
+	margin-bottom: 3rem;
+}
+
+.edit-btn {
+	display: block;
+	background: var(--clr-primary-2);
+	color: var(--clr-dark);
+	font-size: var(--font-size-600);
+	margin-left: auto;
+	border-radius: var(--border-radius);
+
+	transition: transform 200ms ease-in-out;
+}
+
+.edit-btn:hover {
+	transform: scale(1.15);
+}
+
+.edit-btn:focus-visible {
+	outline: none;
+	box-shadow: var(--button-focus-light);
+
+	animation: scale 300ms ease-in-out alternate 2;
+}

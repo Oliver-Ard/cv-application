@@ -67,7 +67,7 @@ function General({ data, onChange }) {
 					type="tel"
 					id="phone-number"
 					name="phoneNumber"
-					placeholder="123 456 7890"
+					placeholder="123-456-7890"
 					max="10"
 					maxLength="18"
 					pattern="^(\(\d{3}\)?|\d{3}-?|\d{3}?)?\d{3}?-?\d{4}$"
